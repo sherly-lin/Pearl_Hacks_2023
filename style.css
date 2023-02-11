@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,600&display=swap");
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+    background-color: rgb(235, 235, 235);
+}
+
+.maincal{
+    min-height: 100vh;      /* 100vh = 100%viewport height */
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)), url(images/upsidedown-edit2.png); */
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    background-color: rgb(235, 235, 235);
+}
+
+.title{
+    font-size: 38px;
+    padding: 30px;
+    /* background-color: black; */
+}
+
+table{
+    width: 90%;
+    height: fit-content;
+    background: lightgray;
+    color: black;
+    padding: 20px;
+    align-content: center;
+    position:relative;
+    empty-cells: show;
+    margin: auto;
+    border-radius: 20px;
+    border-collapse: collapse;
+    border-color: rgb(154, 154, 154);
+}
+
+th{ 
+
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+td{
+    font-size: 20px;
+    background-color:aliceblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    border: dotted 2px lightgray;
+}
+
+.day{
+    color: rgb(255, 254, 254); 
+    background: rgb(175, 122, 175);
+}
+
+
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}    
