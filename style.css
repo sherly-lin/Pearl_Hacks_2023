@@ -9,9 +9,9 @@
 
 .title{
     font-size: 38px;
-    padding: 50px;
-    margin-right: 100px;
-    
+    margin: 10px;
+    padding: 10px;
+    position: fixed;
 }
 
 body{
@@ -25,7 +25,8 @@ body{
 
 
 .container{
-    margin: 20px;
+    position: relative;
+    margin: 300px;
     max-width: 600px;
     width: 50%;
     height: 50%;
@@ -37,7 +38,7 @@ body{
 .container header{
     display: flex;
     align-items: center;
-    padding: 30px 50px 20px;
+    padding: 20px 40px 10px;
     justify-content: space-between;
 }
 
@@ -51,8 +52,8 @@ header .icons{
     display: flex;
 }
 header .icons span{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: 0 1px;
     cursor: pointer;
     color: #878787;
@@ -94,6 +95,7 @@ header .current-date{
     font-size: 1.2rem;
 }
 .calendar .weeks li{
+    margin-bottom: 5px;
     font-weight: 500;
     cursor: default;
 }
@@ -101,7 +103,8 @@ header .current-date{
     z-index: 1;
     cursor: pointer;
     position: relative;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .days li.inactive{
     color: #aaa;
@@ -114,8 +117,8 @@ header .current-date{
     content: "";
     left: 50%;
     top: 50%;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     z-index: -1;
     border-radius: 10px;
     transform: translate(-50%, -50%);
@@ -128,68 +131,47 @@ header .current-date{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* .maincal{
-    min-height: 100vh;    
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: fixed;
-    background-color: rgb(235, 235, 235);
-}
-
-
-
-table{
-    width: 90%;
-    height: fit-content;
-    background: lightgray;
-    color: black;
-    padding: 20px;
-    align-content: center;
-    position:relative;
-    empty-cells: show;
-    margin: auto;
-    border-radius: 20px;
-    border-collapse: collapse;
-    border-color: rgb(154, 154, 154);
-}
-
-th{ 
-
-    font-size: 25px;
-    font-weight: bold;
-    padding: 30px;
-}
-
-td{
-    font-size: 20px;
-    background-color:aliceblue;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 60px;
-    border: dotted 2px lightgray;
-}
-
-.day{
-    color: rgb(255, 254, 254); 
-    background: rgb(175, 122, 175);
-}
-
-
-.popup{
+.tooltipbox{
+    right: 10px;
+    top: 20%;
     position: relative;
     display: inline-block;
-    cursor: pointer;
-}     */
+    
+    border: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+
+
+.tooltipbox p{
+    visibility: hidden;
+    min-width: 500px;
+    min-height: 100px;
+    background-color: rgb(255, 242, 222);
+    color: #272727;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: fixed;
+    z-index: 1;
+}
+  
+
+/* .tooltip:hover .tooltipbox {
+    visibility: visible;
+} */
+
+
+/* 
+.text-box{
+    width: 80%;
+    background-color:#ece0d5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+} */
+
+
